@@ -3,7 +3,7 @@
 
     function viewModel() {
         var me = this;
-        var tz = new TimezApp.TimeZ();
+        this.tz = new TimezApp.TimeZ();
     }
 
     WinJS.UI.Pages.define("/pages/home/home.html", {

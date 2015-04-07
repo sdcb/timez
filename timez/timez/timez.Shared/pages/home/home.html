@@ -17,7 +17,12 @@
             </h1>
         </header>
         <section aria-label="Main content" role="main">
-            <p>Content goes here.</p>
+            <ul data-bind="foreach: tz.times">
+                <li>
+                    <h2 data-bind="text: name"></h2>
+                    <h4 data-bind="text: time"></h4>
+                </li>
+            </ul>
         </section>
     </div>
 </body>

@@ -21,8 +21,14 @@ module TimezApp {
             var str = localStorage.getItem('timez');
             if (str) {
                 var data = JSON.parse(str);
-                this.time(data.time);
-                this.times(data.times);
+                this.time(moment(data.time));
+                this.times(ko.utils.arrayMap(data.times,(item: any) => {
+                    return new TimeItem(item.name, moment.duration(item.offset), this.time);
+                }));
+            }
+            if (this.times().length === 0) {
+                this.times.push(new TimeItem('Device Time', moment.duration(0, 'ms'), this.time));
+                this.save();
             }
         }
 

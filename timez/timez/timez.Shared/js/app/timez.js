@@ -26,9 +26,19 @@ var TimezApp;
             var str = localStorage.getItem('timez');
             if (str) {
                 var data = JSON.parse(str);
-                this.time(data.time);
-                this.times(data.times);
+                this.parse(data);
             }
+            if (this.times().length === 0) {
+                this.times.push(new TimeItem('Device Time', moment.duration(0, 'ms'), this.time));
+                this.save();
+            }
+        };
+        TimeZ.prototype.parse = function (data) {
+            var _this = this;
+            this.time(moment(data.time));
+            this.times(ko.utils.arrayMap(data.times, function (item) {
+                return new TimeItem(item.name, moment.duration(item.offset), _this.time);
+            }));
         };
         TimeZ.prototype.save = function () {
             var data = ko.toJSON(this);
