@@ -11,6 +11,11 @@ Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "timez.Windows", "timez\time
 EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "timez.WindowsPhone", "timez\timez.WindowsPhone\timez.WindowsPhone.jsproj", "{7ABB729C-308F-4C98-BC76-028207BACD0E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{06CFB563-E269-4AA9-9A80-A44D8D8D197F}"
+	ProjectSection(SolutionItems) = preProject
+		tsc.txt = tsc.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		timez\timez.Shared\timez.Shared.projitems*{a18da13b-f6e1-4c5b-8796-5510a71f8843}*SharedItemsImports = 5
@@ -84,5 +89,6 @@ Global
 		{0AF1A04F-7E3C-479D-AC3F-029EEEDAF0AB} = {C76B2FD8-A855-44F9-B52D-04DCD0761EE9}
 		{A18DA13B-F6E1-4C5B-8796-5510A71F8843} = {C76B2FD8-A855-44F9-B52D-04DCD0761EE9}
 		{7ABB729C-308F-4C98-BC76-028207BACD0E} = {C76B2FD8-A855-44F9-B52D-04DCD0761EE9}
+		{06CFB563-E269-4AA9-9A80-A44D8D8D197F} = {C76B2FD8-A855-44F9-B52D-04DCD0761EE9}
 	EndGlobalSection
 EndGlobal

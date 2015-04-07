@@ -2,4 +2,13 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/timez/.vs/timez/v14/.suo
+*.suo
+*.suo
+*.user
+/timez/packages
+/timez/timez/timez.WindowsPhone/timez.WindowsPhone.jsproj.user
+/timez/timez/timez.WindowsPhone/bld
+/timez/timez/timez.WindowsPhone/bin
+/timez/timez/timez.Windows/bld
+/timez/timez/timez.Windows/bin
+/timez/.vs/timez/v14/vbcs.cache
