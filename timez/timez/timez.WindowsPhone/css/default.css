@@ -20,10 +20,11 @@
     }
 
         .fragment header[role=banner] .win-navigation-backbutton {
-            -ms-grid-column: 2;
+            /*-ms-grid-column: 2;
             margin-top: 57px;
             position: relative;
-            z-index: 1;
+            z-index: 1;*/
+            display: none;
         }
 
         .fragment header[role=banner] .titlearea {

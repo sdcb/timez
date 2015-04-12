@@ -30,6 +30,7 @@
         ready: function (element, options) {
             window.vm = new viewModel();
             ko.applyBindings(vm, element);
+            document.getElementById("appbar").winControl.disabled = false;
         },
         unload: function () {
             ko.cleanNode(this.element);

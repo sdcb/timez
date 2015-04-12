@@ -6,6 +6,7 @@
     <SharedGUID>0af1a04f-7e3c-479d-ac3f-029eeedaf0ab</SharedGUID>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)default.html" />
     <Content Include="$(MSBuildThisFileDirectory)js\app\timez.js" />
     <Content Include="$(MSBuildThisFileDirectory)js\app\timez.js.map" />
     <Content Include="$(MSBuildThisFileDirectory)js\app\timez.ts" />
@@ -27,5 +28,17 @@
     <Content Include="$(MSBuildThisFileDirectory)Scripts\moment.min.js" />
     <Content Include="$(MSBuildThisFileDirectory)Scripts\typings\knockout\knockout.d.ts" />
     <Content Include="$(MSBuildThisFileDirectory)Scripts\typings\moment\moment.d.ts" />
+    <Content Include="$(MSBuildThisFileDirectory)winjs\css\ui-dark.css" />
+    <Content Include="$(MSBuildThisFileDirectory)winjs\css\ui-light.css" />
+    <Content Include="$(MSBuildThisFileDirectory)winjs\fonts\Symbols.ttf" />
+    <Content Include="$(MSBuildThisFileDirectory)winjs\js\en-US\ui.strings.js" />
+    <Content Include="$(MSBuildThisFileDirectory)winjs\js\WinJS.intellisense-setup.js" />
+    <Content Include="$(MSBuildThisFileDirectory)winjs\js\WinJS.intellisense.js" />
+    <Content Include="$(MSBuildThisFileDirectory)winjs\js\WinJS.js" />
+    <Content Include="$(MSBuildThisFileDirectory)winjs\js\WinJS.min.js" />
+    <Content Include="$(MSBuildThisFileDirectory)winjs\js\WinJS.min.js.map" />
+    <Content Include="$(MSBuildThisFileDirectory)winjs\License.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)winjs\package.json" />
+    <Content Include="$(MSBuildThisFileDirectory)winjs\README.md" />
   </ItemGroup>
 </Project>

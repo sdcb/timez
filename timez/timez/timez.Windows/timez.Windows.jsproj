@@ -59,7 +59,6 @@
     </AppxManifest>
     <Content Include="css\default.css" />
     <Content Include="pages\home\home.css" />
-    <Content Include="default.html" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />

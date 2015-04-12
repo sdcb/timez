@@ -19,22 +19,18 @@
             <div class="box">
                 <label>名称：</label>
                 <input type="text" data-bind="value: item.name" />
+                <h3 data-bind="momentText: item.time, format: 'HH:mm:ss'"></h3>
             </div>
 
             <div class="box" data-bind="with: time">
                 <label>时间差：</label>
-                <input type="number" placeholder="小时" value="0" data-bind="value: hour"/>
-                <input type="number" placeholder="分钟" value="0" data-bind="value: minute"/>
-                <input type="number" placeholder="秒" value="0" data-bind="value: second"/>
-            </div>
-
-            <div class="box" data-bind="with: item">
-                <h4 data-bind="text: name"></h4>
-                <h2 data-bind="momentText: time, format: 'HH:mm:ss'"></h2>
+                <input type="number" placeholder="小时" value="0" data-bind="value: hour, valueUpdate: 'afterkeydown'" />
+                <input type="number" placeholder="分钟" value="0" data-bind="value: minute, valueUpdate: 'afterkeydown'" />
+                <input type="number" placeholder="秒" value="0" data-bind="value: second, valueUpdate: 'afterkeydown'" />
             </div>
         </section>
 
-        <div data-win-control="WinJS.UI.AppBar">
+        <div data-win-control="WinJS.UI.AppBar" id="appbar">
             <button data-bind="click: save"
                     data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon: 'save', label:'保存'}"></button>
         </div>

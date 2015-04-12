@@ -52,6 +52,7 @@
         ready: function (element, options) {
             window.vm = new ViewModel(options.tz);
             ko.applyBindings(vm, element);
+            document.getElementById("appbar").winControl.disabled = false;
         },
 
         unload: function () {
