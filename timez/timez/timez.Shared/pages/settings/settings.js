@@ -1,7 +1,7 @@
 ﻿(function () {
     "use strict";
 
-    function Hms() {
+    function Hms(duration) {
         var me = this;
         this.hour = ko.observable(0);
         this.minute = ko.observable(0);
@@ -23,6 +23,7 @@
                 me.hour(v.hours());
             }
         });
+        this.duration(duration);
     }
 
     var mode = {
