@@ -21,11 +21,17 @@
                 <input type="text" data-bind="value: item.name" />
             </div>
 
-            <div class="box">
+            <div class="box" data-bind="with: time">
                 <label>时间差：</label>
-                <div data-bind="winTimePicker: {current: time, clock: '24HourClock'}" ></div>
+                <input type="number" placeholder="小时" value="0" data-bind="value: hour"/>
+                <input type="number" placeholder="分钟" value="0" data-bind="value: minute"/>
+                <input type="number" placeholder="秒" value="0" data-bind="value: second"/>
             </div>
-            
+
+            <div class="box" data-bind="with: item">
+                <h4 data-bind="text: name"></h4>
+                <h2 data-bind="momentText: time, format: 'HH:mm:ss'"></h2>
+            </div>
         </section>
 
         <div data-win-control="WinJS.UI.AppBar">

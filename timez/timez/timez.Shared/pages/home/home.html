@@ -7,6 +7,9 @@
     <link href="/css/default.css" rel="stylesheet" />
     <link href="/pages/home/home.css" rel="stylesheet" />
     <script src="/pages/home/home.js"></script>
+
+    <style>
+    </style>
 </head>
 <body>
     <!-- The content that will be loaded and displayed. -->
@@ -17,15 +20,15 @@
             </h1>
         </header>
         <section aria-label="Main content" role="main">
-            <ul data-bind="foreach: tz.times">
-                <li>
-                    <h2 data-bind="text: name"></h2>
-                    <h4 data-bind="text: time"></h4>
+            <ul data-bind="foreach: tz.times" class="times">
+                <li data-bind="click: $parent.edit.bind($parent, $data)">
+                    <h4 data-bind="text: name"></h4>
+                    <h2 data-bind="momentText: time, format: 'HH:mm:ss'"></h2>
                 </li>
             </ul>
         </section>
 
-        <div data-win-control="WinJS.UI.AppBar">
+        <div data-win-control="WinJS.UI.AppBar" id="appbar">
             <button data-bind="click: add" data-win-control="WinJS.UI.AppBarCommand" data-win-options="{label: '添加', icon:'add'}"></button>
         </div>
     </div>
