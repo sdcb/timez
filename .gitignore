@@ -6,9 +6,7 @@
 *.suo
 *.user
 /timez/packages
-/timez/timez/timez.WindowsPhone/timez.WindowsPhone.jsproj.user
-/timez/timez/timez.WindowsPhone/bld
-/timez/timez/timez.WindowsPhone/bin
-/timez/timez/timez.Windows/bld
-/timez/timez/timez.Windows/bin
 /timez/.vs/timez/v14/vbcs.cache
+/timez/timez/bin
+/timez/timez/bld
+*.map
