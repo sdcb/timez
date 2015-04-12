@@ -12,7 +12,12 @@
         <header class="page-header" aria-label="Header content" role="banner">
             <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
             <h1 class="titlearea win-type-ellipsis">
+                <!-- ko if: mode == 1 -->
                 <span class="pagetitle">设置</span>
+                <!-- /ko -->
+                <!-- ko if: mode == 2 -->
+                <span class="pagetitle">创建</span>
+                <!-- /ko -->
             </h1>
         </header>
         <section class="page-section" aria-label="Main content" role="main">
@@ -33,6 +38,10 @@
         <div data-win-control="WinJS.UI.AppBar" id="appbar">
             <button data-bind="click: save"
                     data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon: 'save', label:'保存'}"></button>
+            <!-- ko if: mode == 1 -->
+            <button data-bind="click: drop"
+                    data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon: 'delete', label:'删除'}"></button>
+            <!-- /ko -->
         </div>
     </div>
 </body>
