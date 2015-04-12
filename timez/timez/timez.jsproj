@@ -62,12 +62,28 @@
     <Content Include="images\smalllogo.scale-100.png" />
     <Content Include="images\splashscreen.scale-100.png" />
     <Content Include="images\storelogo.scale-100.png" />
+    <Content Include="js\navigator.js" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
+    <Content Include="pages\page2\page2.css" />
+    <Content Include="pages\page2\page2.html" />
+    <Content Include="pages\page2\page2.js" />
+    <Content Include="Scripts\knockout-3.3.0.debug.js" />
+    <Content Include="Scripts\knockout-3.3.0.js" />
+    <Content Include="WinJS\css\ui-dark.css" />
+    <Content Include="WinJS\css\ui-light.css" />
+    <Content Include="WinJS\fonts\Symbols.ttf" />
+    <Content Include="WinJS\js\en-US\ui.strings.js" />
+    <Content Include="WinJS\js\WinJS.intellisense-setup.js" />
+    <Content Include="WinJS\js\WinJS.intellisense.js" />
+    <Content Include="WinJS\js\WinJS.js" />
+    <Content Include="WinJS\js\WinJS.min.js" />
+    <Content Include="WinJS\js\WinJS.min.js.map" />
     <TypeScriptCompile Include="Scripts\typings\knockout\knockout.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\moment\moment.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\winjs\winjs.d.ts" />
     <TypeScriptCompile Include="ts\timez.ts" />
+    <Content Include="js\en-US\ui.strings.js" />
     <Content Include="packages.config" />
     <Content Include="pages\home\home.css" />
     <Content Include="pages\home\home.html" />
@@ -76,13 +92,6 @@
     <Content Include="Scripts\moment-with-locales.min.js" />
     <Content Include="Scripts\moment.js" />
     <Content Include="Scripts\moment.min.js" />
-    <Content Include="WinJS\css\ui-dark.css" />
-    <Content Include="WinJS\css\ui-light.css" />
-    <Content Include="WinJS\fonts\Symbols.ttf" />
-    <Content Include="WinJS\js\en-US\ui.strings.js" />
-    <Content Include="WinJS\js\WinJS.js" />
-    <Content Include="WinJS\js\WinJS.intellisense.js" />
-    <Content Include="WinJS\js\WinJS.intellisense-setup.js" />
     <None Include="timez_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

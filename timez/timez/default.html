@@ -7,12 +7,14 @@
     <!-- WinJS references -->
     <link href="WinJS/css/ui-dark.css" rel="stylesheet" />
     <script src="WinJS/js/WinJS.js"></script>
+    <script src="Scripts/knockout-3.3.0.debug.js"></script>
 
     <!-- timez references -->
     <link href="/css/default.css" rel="stylesheet" />
     <script src="/js/default.js"></script>
+    <script src="js/navigator.js"></script>
 </head>
 <body>
-    <div id="layoutroot" data-win-control="WinJS.UI.HtmlControl" data-win-options="{uri: '/pages/home/home.html'}"></div>
+    <div id="layoutroot" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/home/home.html'}"></div>
 </body>
 </html>
