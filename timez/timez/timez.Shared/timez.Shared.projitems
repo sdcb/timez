@@ -14,8 +14,12 @@
     <Content Include="$(MSBuildThisFileDirectory)packages.config" />
     <Content Include="$(MSBuildThisFileDirectory)pages\home\home.js" />
     <Content Include="$(MSBuildThisFileDirectory)pages\home\home.html" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\settings\settings.css" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\settings\settings.html" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\settings\settings.js" />
     <Content Include="$(MSBuildThisFileDirectory)Scripts\knockout-3.3.0.debug.js" />
     <Content Include="$(MSBuildThisFileDirectory)Scripts\knockout-3.3.0.js" />
+    <Content Include="$(MSBuildThisFileDirectory)Scripts\knockout-winjs.js" />
     <Content Include="$(MSBuildThisFileDirectory)Scripts\moment-with-locales.js" />
     <Content Include="$(MSBuildThisFileDirectory)Scripts\moment-with-locales.min.js" />
     <Content Include="$(MSBuildThisFileDirectory)Scripts\moment.js" />

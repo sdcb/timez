@@ -27,7 +27,7 @@ module TimezApp {
                 }));
             }
             if (this.times().length === 0) {
-                this.times.push(new TimeItem('Device Time', moment.duration(0, 'ms'), this.time));
+                this.times.push(new TimeItem('设备时间', moment.duration(0, 'ms'), this.time));
                 this.save();
             }
         }

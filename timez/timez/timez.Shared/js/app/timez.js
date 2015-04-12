@@ -23,22 +23,19 @@ var TimezApp;
             }, 1000);
         }
         TimeZ.prototype.load = function () {
+            var _this = this;
             var str = localStorage.getItem('timez');
             if (str) {
                 var data = JSON.parse(str);
-                this.parse(data);
+                this.time(moment(data.time));
+                this.times(ko.utils.arrayMap(data.times, function (item) {
+                    return new TimeItem(item.name, moment.duration(item.offset), _this.time);
+                }));
             }
             if (this.times().length === 0) {
-                this.times.push(new TimeItem('Device Time', moment.duration(0, 'ms'), this.time));
+                this.times.push(new TimeItem('设备时间', moment.duration(0, 'ms'), this.time));
                 this.save();
             }
-        };
-        TimeZ.prototype.parse = function (data) {
-            var _this = this;
-            this.time(moment(data.time));
-            this.times(ko.utils.arrayMap(data.times, function (item) {
-                return new TimeItem(item.name, moment.duration(item.offset), _this.time);
-            }));
         };
         TimeZ.prototype.save = function () {
             var data = ko.toJSON(this);
