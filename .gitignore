@@ -3,10 +3,13 @@
 ################################################################################
 
 *.suo
-*.suo
 *.user
 /timez/packages
 /timez/.vs/timez/v14/vbcs.cache
 /timez/timez/bin
 /timez/timez/bld
 *.map
+/timez/timez/timez.Windows/bld/
+/timez/timez/timez.Windows/bin/
+/timez/timez/timez.WindowsPhone/bld/
+/timez/timez/timez.WindowsPHone/bin/

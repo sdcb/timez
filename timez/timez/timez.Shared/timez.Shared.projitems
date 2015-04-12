@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>0af1a04f-7e3c-479d-ac3f-029eeedaf0ab</SharedGUID>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)js\app\timez.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\app\timez.js.map" />
+    <Content Include="$(MSBuildThisFileDirectory)js\app\timez.ts" />
+    <Content Include="$(MSBuildThisFileDirectory)js\navigator.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\default.js" />
+    <Content Include="$(MSBuildThisFileDirectory)packages.config" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\home\home.js" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\home\home.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Scripts\knockout-3.3.0.debug.js" />
+    <Content Include="$(MSBuildThisFileDirectory)Scripts\knockout-3.3.0.js" />
+    <Content Include="$(MSBuildThisFileDirectory)Scripts\moment-with-locales.js" />
+    <Content Include="$(MSBuildThisFileDirectory)Scripts\moment-with-locales.min.js" />
+    <Content Include="$(MSBuildThisFileDirectory)Scripts\moment.js" />
+    <Content Include="$(MSBuildThisFileDirectory)Scripts\moment.min.js" />
+    <Content Include="$(MSBuildThisFileDirectory)Scripts\typings\knockout\knockout.d.ts" />
+    <Content Include="$(MSBuildThisFileDirectory)Scripts\typings\moment\moment.d.ts" />
+  </ItemGroup>
+</Project>

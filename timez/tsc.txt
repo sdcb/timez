@@ -1,0 +1,1 @@
+tsc .\timez\timez.Shared\js\app\timez.ts --sourceMap
