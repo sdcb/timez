@@ -34,7 +34,7 @@
     function ViewModel(tz, data) {
         var me = this;
         this.tz = tz;
-        this.mode = data ? mode.edit : mode.create;
+        this.mode = ko.observable(data ? mode.edit : mode.create);
         this.item = data ? data : new TimezApp.TimeItem('新的时间', moment.duration(0), this.tz.time);
 
         this.time = new Hms(this.item.offset());
@@ -42,8 +42,8 @@
             me.item.offset(v);
         });
         this.save = function () {
-            if (this.mode === mode.edit) {
-            } else if (this.mode === mode.create) {
+            if (this.mode() === mode.edit) {
+            } else if (this.mode() === mode.create) {
                 me.tz.times.push(me.item);
             }
             me.tz.save();
